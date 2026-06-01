@@ -107,3 +107,6 @@ flowchart TB
   CM --> gi
 ```
 
+## Referência ao UML
+- O diagrama de classes UML está disponível em `docs/uml.md`.
+
