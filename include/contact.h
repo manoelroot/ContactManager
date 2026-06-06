@@ -7,10 +7,10 @@
 typedef struct {
     char name[MAX_NAME];
     char phone[MAX_PHONE];
-;} Contact;
+} Contact;
 
-void addContact(Contact contacts[], int *count); 
-void listcontacts(Contact contacts[], int count);
+void addContact(Contact contacts[], int *count);
+void listContacts(Contact contacts[], int count);
 
 #endif 
 // Prototipo de função para buscar um contatos por nome. 

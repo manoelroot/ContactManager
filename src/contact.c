@@ -1,8 +1,7 @@
 #include <stdio.h>
-#include <../include/contact.h>
+#include "../include/contact.h"
 
-void addContact (Contact contacts[], int *count) 
-{
+void addContact(Contact contacts[], int *count) {
     printf("Inserir nome do contato: ");
     scanf("%99s", contacts[*count].name);
 
@@ -11,22 +10,16 @@ void addContact (Contact contacts[], int *count)
 
     (*count)++;
 }
-void listContacts(Contact contacts[], int count)
-{
-if(count == 0) {
-    printf("Nenhum contato encontrado!\n");
-    return;
-}
+
+void listContacts(Contact contacts[], int count) {
+    if (count == 0) {
+        printf("Nenhum contato encontrado!\n");
+        return;
+    }
+
     for (int i = 0; i < count; i++) {
-        printf("Contato %d:\n", i ++);
-        {
-            printf(
-                "\n%d  | %s | %s\n", 
-                i + 1,
-                contacts[i].name, 
-                contacts[i].phone            
-                
-            );
-        }
+        printf("Contato %d:\n", i + 1);
+        printf("Nome: %s | Telefone: %s\n", contacts[i].name, contacts[i].phone);
     }
 }
+
