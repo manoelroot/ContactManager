@@ -78,6 +78,18 @@ gcc -Iinclude src/main.c src/contact.c src/storage.c -o contactmanager
 * `docs/resultados.md` — resultados concluídos.
 * `docs/testes.md` — casos de teste.
 * `docs/diario/diario.md` — histórico de desenvolvimento.
+* `CONTRIBUTING.md` — guia de convenção de commits.
+
+# Convenção de commits
+
+Use prefixos de commit para organizar o histórico do projeto:
+
+- `STR:` — estrutura e refatoração
+- `FEAT:` — nova implementação ou função
+- `FIX:` — correções de bug
+- `TEST:` — testes, builds e validações
+- `DOCS:` — documentação
+- `CHORE:` — manutenção geral
 
 # Observações
 
