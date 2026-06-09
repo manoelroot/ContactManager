@@ -1,85 +1,11 @@
 # Diário de Desenvolvimento
 
-Este documento registra o progresso do projeto ContactManager desde o início do desenvolvimento.
+Este diretório registra o progresso do projeto ContactManager organizado por dia.
 
-## 2026-05-31 08:00 - Início do projeto
-- Definição do objetivo: construir um sistema de gerenciamento de contatos em terminal usando linguagem C.
-- Levantamento das funcionalidades principais: adicionar, listar, buscar, remover contatos e persistência em arquivo.
-- Decisão de manter o projeto modular: separar código-fonte em `src/`, cabeçalhos em `include/`, dados em `data/` e testes em `tests/`.
+## Arquivos do diário
 
-## 2026-05-31 09:10 - Planejamento e modelagem
-- Especificação dos requisitos básicos e dos fluxos de uso.
-- Criação das estruturas de dados principais (contato com nome, telefone, email, e ID opcional).
-- Definição do formato de armazenamento em arquivo: texto simples com campos separados.
+- [2026-05-31](2026-05-31.md)
+- [2026-06-05](2026-06-05.md)
+- [2026-06-09](2026-06-09.md)
 
-## 2026-05-31 10:05 - Configuração inicial do repositório
-- Criação da estrutura de diretórios do projeto.
-- Inclusão de arquivo `README.md` com visão geral do sistema.
-- Planejamento de documentação adicional em `docs/` para arquitetura, requisitos e testes.
-
-## 2026-05-31 11:35 - Desenvolvimento do núcleo
-- Implementação das funções de adicionar contato e listar todos os contatos.
-- Criação de rotinas para carregar contatos do arquivo ao iniciar o programa.
-- Execução de testes iniciais do fluxo de cadastro e persistência.
-
-## 2026-05-31 13:00 - Adição de busca e remoção
-- Implementação da busca por nome e por telefone.
-- Desenvolvimento da remoção de contatos com atualização do arquivo de dados.
-- Ajuste de mensagens de interação no terminal para melhor usabilidade.
-
-## 2026-05-31 14:20 - Testes e revisão
-- Realização de testes de casos comuns: adicionar múltiplos contatos, buscar registros e remover entradas.
-- Verificação de consistência do arquivo de dados após operações de escrita.
-- Correção de bugs relacionados à leitura de strings e final de arquivo.
-
-## 2026-05-31 15:40 - Documentação e finalização
-- Atualização do `README.md` com as funcionalidades do sistema.
-- Inclusão de diagrama Mermaid para representar o processo de desenvolvimento.
-- Preparação de `docs/` com documentação de requisitos, arquitetura e casos de uso.
-
-## 2026-06-05 10:00 - Registro das atividades até o momento
-- Revisão do estado atual do projeto e registro cronológico das ações realizadas.
-- Confirmação da estrutura principal de arquivos e pastas do sistema.
-- Levantamento das etapas concluídas em sequência:
-  1. Definição do objetivo e escopo do sistema de gerenciamento de contatos.
-  2. Modelagem das estruturas de dados e escolha do formato de armazenamento.
-  3. Criação da estrutura de diretórios (`src/`, `include/`, `docs/`).
-  4. Implementação das funções de adicionar, listar, buscar e remover contatos.
-  5. Desenvolvimento da persistência em arquivo e carregamento ao iniciar o programa.
-  6. Testes iniciais, correções de leitura/escrita e ajustes de usabilidade.
-  7. Atualização da documentação do projeto e organização dos artefatos em `docs/`.
-- Preparação do diário para manter o histórico por dia e sequência de entregas.
-
-## 2026-06-05 19:00  - Revisão e rastreio do código atual
-- Inspeção completa do código-fonte e do estado real da implementação.
-- Arquivos analisados:
-  - `include/contact.h`
-  - `src/contact.c`
-  - `include/storage.h`
-  - `src/storage.c`
-  - `src/main.c`
-- Estado atual do projeto:
-  1. `Contact` está definido com `name` e `phone` apenas; o email mencionado no planejamento ainda não consta no código.
-  2. `addContact` foi implementado em `src/contact.c`, mas ainda não possui validação de entrada nem tratamento de buffer.
-  3. `listContacts` está presente, porém contém lógica incorreta (`i ++` dentro do `printf`) e divergência de nomes entre `listcontacts` e `listContacts`.
-  4. `saveContacts` e `loadContacts` estão prototipados corretamente em `include/storage.h`, porém `src/storage.c` contém erros de sintaxe e inconsistências de variáveis, tornando a persistência não funcional.
-  5. `main.c` está vazio; o fluxo principal do programa ainda não foi implementado.
-- Implicações para o projeto:
-  - O código atual não compila como está devido a erros em `src/storage.c`.
-  - A funcionalidade de persistência em arquivo precisa ser corrigida e testada.
-  - A interface de execução do programa e o menu de navegação ainda precisam ser adicionados.
-- Próximas ações recomendadas:
-  1. Corrigir e validar `src/storage.c` para permitir salvar e carregar contatos.
-  2. Ajustar `src/contact.c` para corrigir `listContacts` e padronizar nomes de funções.
-  3. Implementar `main.c` com fluxo de menu e chamadas a `addContact`, `listContacts`, `saveContacts` e `loadContacts`.
-  4. Expandir `Contact` para incluir campos adicionais se necessário e adicionar validação de entrada.
-
-## 2026-06-05 20:00 - Organização da documentação
-- Atualização de `README.md` para refletir o estado atual do projeto.
-- Reescrita de `docs/arquitetura.md`, `docs/modelos-de-dados.md`, `docs/casos-de-uso.md` e `docs/requisitos.md` para refletir a implementação em C.
-- Revisão de `docs/testes.md` e `docs/resultados.md` para registrar o progresso e o estado dos testes.
-- Criação de `docs/README.md` como índice de documentos.
-
-## Observações
-- O diário foi criado para acompanhar o progresso das etapas de implantação e garantir rastreabilidade das decisões.
-- Novas entradas devem ser adicionadas sempre que forem feitas mudanças significativas no projeto.
+> Adicione novas entradas criando um arquivo separado para cada data, por exemplo `YYYY-MM-DD.md`.
