@@ -24,3 +24,5 @@ Este diretório reúne os artefatos de documentação do projeto e serve como í
 ## Observações
 
 A documentação foi reorganizada em junho de 2026 para refletir o estado atual da implementação em C e o ciclo de desenvolvimento do projeto.
+
+O projeto está em evolução para uma arquitetura híbrida com PostgreSQL como backend planejado, Python para automações e uma interface gráfica futura.

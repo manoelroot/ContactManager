@@ -10,6 +10,11 @@ A arquitetura atual separa:
 - persistência de dados em `src/storage.c`
 - fluxo de execução e menu em `src/main.c`
 
+O projeto também está evoluindo para uma arquitetura híbrida:
+- PostgreSQL será adotado como backend de banco de dados para persistência mais robusta e escalável.
+- Python será usado em tarefas auxiliares, como scripts de migração, importação/exportação e automações de manutenção.
+- Uma interface gráfica será criada para oferecer uma experiência de usuário mais intuitiva além da linha de comando.
+
 ## Componentes principais
 
 ### `src/main.c`
@@ -75,6 +80,7 @@ ContactManager/
 - `src/storage.c` está em desenvolvimento e precisa de correção para gravar e ler corretamente.
 - `src/main.c` ainda não possui o menu completo nem a sequência de chamadas de rotina.
 - O arquivo de persistência esperado é `data/contacts.txt`.
+- A arquitetura futura prevê migração para PostgreSQL, adoção de Python em scripts de manutenção e a criação de uma interface gráfica.
 
 ## Referência
 - Veja também `docs/modelos-de-dados.md` para o formato do contato e do armazenamento.

@@ -9,8 +9,11 @@ typedef struct {
     char phone[MAX_PHONE];
 } Contact;
 
-void addContact(Contact contacts[], int *count);
-void listContacts(Contact contacts[], int count);
+void addContact(Contact contacts[], int *count); // Prototipo de função para adicionar um contato.
+void listContacts(Contact contacts[], int count); // Prototipo de função para listar os contatos.
+void removeContact(Contact contacts[], int *count); // Prototipo de função para remover um contato.
+int findContact(Contact contacts[], int id); // Prototipo de função para buscar um contato por ID.
+
 
 #endif 
 // Prototipo de função para buscar um contatos por nome. 

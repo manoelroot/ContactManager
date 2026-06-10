@@ -11,6 +11,7 @@ int main(void) {
     int count = 0;
     int option;
 
+// Carregar contatos do arquivo ao iniciar o programa.
     loadContacts(contacts, &count);
 
     do {
@@ -23,7 +24,7 @@ int main(void) {
             fprintf(stderr, "Entrada inválida. Saindo.\n");
             break;
         }
-
+// Limpar o buffer de entrada para evitar problemas com scanf.
         switch (option) {
             case 1:
                 if (count >= MAX_CONTACTS) {
@@ -47,3 +48,5 @@ int main(void) {
 
     return 0;
 }
+// O programa agora inclui a funcionalidade de carregar e salvar contatos usando as funções definidas em storage.c.
+// As funções removeContact e findContact ainda precisam ser implementadas, mas a estrutura básica do programa já está funcional para adicionar e listar contatos.

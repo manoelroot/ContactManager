@@ -37,4 +37,27 @@ Este documento contém os itens principais a serem desenvolvidos para o projeto 
 ## Notas
 - Este backlog inicial serve de base para o planejamento das próximas sprints.
 - Os itens podem ser refinados e divididos à medida que o projeto avança.
+
+## Planejamento de sprints
+
+### Sprint 1 — 09/06/2026 a 16/06/2026
+- **Meta:** estabilizar a versão CLI completa e a persistência local.
+- **Itens principais:** PB-001, PB-002, PB-005, PB-006, PB-003.
+- **Critérios de aceitação:** o sistema adiciona, lista, busca, remove e salva contatos localmente; o fluxo CLI está validado.
+
+### Sprint 2 — 17/06/2026 a 23/06/2026
+- **Meta:** introduzir PostgreSQL como backend e automação com Python.
+- **Itens principais:** PB-005 (evolução), PB-006 (evolução), PB-009.
+- **Critérios de aceitação:** existe script de migração Python; o banco PostgreSQL armazena e recupera contatos.
+
+### Sprint 3 — 24/06/2026 a 30/06/2026
+- **Meta:** criar a primeira interface gráfica do projeto.
+- **Itens principais:** PB-007, PB-008, PB-009.
+- **Critérios de aceitação:** protótipo de UI está funcional para as operações básicas; a experiência é mais intuitiva que o CLI.
+
+## Aceites
+- Cada item do backlog deve ser entregável, testável e documentado.
+- O prazo de cada sprint deve ser respeitado sempre que possível, com revisão diária de progresso no diário.
+- A documentação deve refletir claramente as mudanças na arquitetura e a evolução do backend.
+
 <!--A atualização frequente do documento é estritamente necessaria para rastrear decisões-->

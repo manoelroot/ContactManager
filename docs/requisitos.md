@@ -6,9 +6,9 @@ ContactManager é um sistema de terminal para gerenciamento local de contatos. O
 
 ## Escopo
 
-O sistema opera localmente e não depende de rede ou banco de dados externo.
+O sistema opera localmente e não depende de rede ou banco de dados externo na fase inicial.
 
-> Os dados são armazenados em arquivo local.
+> Os dados são armazenados em arquivo local na fase atual. Há um plano de evolução para adotar PostgreSQL como backend e oferecer automação com Python e interface gráfica.
 
 ## Requisitos Funcionais
 
@@ -32,6 +32,7 @@ O sistema opera localmente e não depende de rede ou banco de dados externo.
 | RNF-04 | Simplicidade    | Navegação clara por menu numérico                    |
 | RNF-05 | Manutenibilidade| Código organizado e modular                          |
 | RNF-06 | Desempenho      | Resposta rápida para operações básicas               |
+| RNF-07 | Backend         | Suportar evolução para PostgreSQL como backend       |
 
 ## Requisitos de Engenharia
 
@@ -51,8 +52,8 @@ O sistema opera localmente e não depende de rede ou banco de dados externo.
 | RC-01  | Linguagem      | Implementar em C                                         |
 | RC-02  | Ambiente       | Executar em Linux                                        |
 | RC-03  | Interface      | Usar somente CLI                                         |
-| RC-04  | Armazenamento  | Persistir em arquivo local                               |
-| RC-05  | Base de dados  | Não usar banco de dados externo                          |
+| RC-04  | Armazenamento  | Persistir em arquivo local na fase atual. Evoluir para PostgreSQL posteriormente |
+| RC-05  | Base de dados  | Não usar banco de dados externo na fase inicial         |
 | RC-06  | Rede           | Sem comunicação de rede                                  |
 | RC-07  | Capacidade     | Suportar até 100 contatos                                |
 | RC-08  | Dependências   | Usar apenas a biblioteca padrão do C                     |
