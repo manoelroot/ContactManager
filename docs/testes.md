@@ -22,3 +22,8 @@ Observações:
 - O código atual precisa ser ajustado antes que este caso de teste possa ser executado com sucesso.
 - Após a correção de `src/storage.c`, deve-se verificar também a persistência em `data/contacts.txt`.
 - Um próximo caso de teste deve incluir a remoção de contatos e a verificação de recarga de dados após reiniciar o programa.
+
+## Histórico de testes executados
+- Os casos de teste registrados são armazenados em `tests/`.
+- Cada arquivo contém data, objetivo, comando, saída, erros e status.
+- Exemplo: `tests/2026-06-09-add-list-persist.md`.
